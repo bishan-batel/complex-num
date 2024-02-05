@@ -1,0 +1,23 @@
+[package]
+name = "complex-num"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+beryllium = "0.13.3"
+log = "0.4.20"
+simple_logger = "4.3.3"
+
+[dev-dependencies]
+clippy = "0.0.302"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+enum_glob_use = "deny"
+pedantic = "deny"
+nursery = "deny"
+unwrap_used = "deny"
